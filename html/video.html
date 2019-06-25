@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<title>Recent Video</title>
+		<!-- <script src="{{url_for('static', filename='js/script.js')}}"> -->
+		<!-- </script> -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+	</head>
+	<body>
+		<div id="top">
+			<ul class="bar">
+				<li class="nav"><a href="/" class="menu">HOME</a></li>
+				<li class="nav"><a href="/live" class="menu">LIVE</a></li>
+				<li class="nav"><a href="/hello/Mom" class="menu">WELCOME</a></li>
+			</ul>
+  	</div>
+		<h1 class="title">Live Stream</h1>
+		<video controls><source src="{{url_for('static', filename='vid/1.h264')}}" type="video/mp4"></video>
+
+	</body>
+</html>

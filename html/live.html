@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<title>LIVE</title>
+		<!-- <script src="{{url_for('static', filename='js/script.js')}}"> -->
+		<!-- </script> -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+	</head>
+	<body>
+		<div id="top">
+			<ul class="bar">
+				<li class="nav"><a href="/" class="menu">HOME</a></li>
+				<li class="nav"><a href="/live" class="menu" id="current">LIVE</a></li>
+				<li class="nav"><a href="/hello/Mom" class="menu">WELCOME</a></li>
+			</ul>
+  	</div>
+		<h1 class="title">Live Stream</h1>
+		<iframe class="current" src="/camera"></iframe>
+		<!-- <img class="inside" src="{{url_for('static', filename='img/10.jpg')}}" alt="Image not found" /> -->
+
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<title>{{ name  }}</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+	</head>
+	<body>
+		<div id="top">
+			<ul class="bar">
+				<li class="nav"><a href="/" class="menu">HOME</a></li>
+				<li class="nav"><a href="/live" class="menu">LIVE</a></li>
+				<li class="nav"><a href="/hello/Mom" class="menu" id="current">WELCOME</a></li>
+			</ul>
+  	</div>
+		<h1 class="welcome">Hello {{ name }}!</h1>
+		<p>Merry Christmas {{ name }}! I hope you enjoy watching birds in your bird house.</p>
+		<p>Love Chris</p>
+		<h3>Home Page</h3>
+		<p>Home page contains ten of the most recent pitures of the day.</p>
+		<h3>Live</h3>
+		<p>Live is what is currently happening. The page will wait for movment for 5 seconds then take the picture.
+		After 5 seconds it take it again.</p>
+	</body>
+</html>
